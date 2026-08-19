@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Overlay permission -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+    <!-- Foreground service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+
+    <!-- Internet for model processing -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeepfakeDetectionCTS">
+
+        <!-- ✅ MAIN ACTIVITY = LAUNCHER -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <!-- ✅ Bubble Service -->
+        <service
+            android:name=".ui.theme.bubble.BubbleService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection"/>
+
+        <!-- ✅ Screenshot Permission Activity -->
+        <activity
+            android:name=".ScreenshotPermissionActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+{
+  "name": "rd_temp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@realitydefender/realitydefender": "^0.1.17",
+    "esbuild": "^0.28.0"
+  }
+}

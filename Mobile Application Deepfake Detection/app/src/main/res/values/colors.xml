@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_background">#121212</color>
+    <color name="result_authentic">#3DDC84</color>
+    <color name="result_deepfake">#E53935</color>
+    <color name="result_synthetic">#2196F3</color>
+</resources>

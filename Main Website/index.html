@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detection | AI Authenticity Checker</title>
+    <meta name="description" content="Protect yourself from malicious deepfakes and AI-generated misinformation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Background Parallax Elements -->
+    <div class="ambient-bg">
+        <div class="ambient-orb orb-a"></div>
+        <div class="ambient-orb orb-b"></div>
+        <div class="ambient-orb orb-c"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.png" alt="Deepfake Detection Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <span>Deepfake Detection</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#impact">The Threat</a></li>
+                <li><a href="#solution">Our Solution</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#trust">Trust</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#download" class="btn btn-outline">Get Extension</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content reveal slide-up">
+                <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <div class="badge" style="margin-bottom: 0;">Academic Research Project</div>
+                    <a href="test-cases.html" class="btn btn-outline" style="padding: 0.4rem 1.25rem; font-size: 0.875rem; color: #00F0FF; border-color: #00F0FF; background: rgba(0, 240, 255, 0.1); border-radius: 50px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                        <span>Test Case Images</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </a>
+                </div>
+                <h1>See the Truth in a World of <span class="text-gradient">Synthetic Media</span></h1>
+                <p>Deepfakes are spreading faster than ever. Our tool empowers you with advanced AI detection to verify images and videos in real-time, right from your browser.</p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/Deepanshusingh2911/Image-Integrity-System-Extension-Deepfake-Synthetic-Image-" target="_blank" class="btn btn-primary">Download Chrome Extension</a>
+                    <a href="https://github.com/Deepanshusingh2911/Image-Integrity-System-Mobile-Application-Deepfake-Synthetic-Image-" target="_blank" class="btn btn-secondary">Get Android App</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal fade-in delay-1">
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+                <img src="assets/hero.png" alt="AI Authenticity Scanner" class="hero-image floating-element">
+            </div>
+        </div>
+    </header>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section impact-section">
+        <div class="container split-container">
+            <div class="image-col reveal fade-in">
+                <div class="parallax-wrapper">
+                    <img src="assets/impact.png" alt="Social Media Deepfake Warning" class="impact-image parallax-img">
+                </div>
+            </div>
+            <div class="content-col reveal slide-up">
+                <h2>The Unseen Danger <br>on Your Feed</h2>
+                <p>AI-generated content is becoming indistinguishable from reality. From social engineering and financial fraud to political misinformation, the risks are escalating daily.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card glass-card hover-glow">
+                        <h3>900%</h3>
+                        <p>Increase in deepfakes year over year</p>
+                    </div>
+                    <div class="stat-card glass-card hover-glow">
+                        <h3>$2B+</h3>
+                        <p>Lost to AI impersonation scams globally</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section solution-section">
+        <div class="container">
+            <div class="section-header reveal slide-up">
+                <h2>Your Digital <span class="text-gradient">Truth Engine</span></h2>
+                <p>We built this tool to seamlessly integrate into your daily browsing. When you encounter media, we analyze its digital fingerprint instantly.</p>
+            </div>
+            
+            <div class="solution-showcase reveal scale-up delay-1">
+                <div class="glow-orb orb-3"></div>
+                <img src="assets/solution.png" alt="Authenticity Checker App UI" class="solution-image floating-element-slow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features-section">
+        <div class="container">
+            <div class="features-grid" id="features-grid">
+                <div class="feature-card glass-card interactive-card reveal slide-up">
+                    <div class="interactive-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3>Advanced AI Analysis</h3>
+                        <p>Built using state-of-the-art machine learning models developed for academic research to detect subtle artifacts.</p>
+                    </div>
+                </div>
+                <div class="feature-card glass-card interactive-card reveal slide-up delay-1">
+                    <div class="interactive-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <h3>Real-Time Detection</h3>
+                        <p>Scans images and videos as you scroll, providing instantaneous authenticity scores without slowing you down.</p>
+                    </div>
+                </div>
+                <div class="feature-card glass-card interactive-card reveal slide-up delay-2">
+                    <div class="interactive-glow"></div>
+                    <div class="card-content">
+                        <div class="icon-box">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg>
+                        </div>
+                        <h3>Cross-Platform Protection</h3>
+                        <p>Available as a seamless Chrome Extension and a standalone Android application for all your devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section id="trust" class="section trust-section">
+        <div class="container split-container reverse">
+            <div class="image-col reveal fade-in">
+                <img src="assets/shield.png" alt="AI Security Shield" class="trust-image floating-element">
+            </div>
+            <div class="content-col reveal slide-up">
+                <h2>Privacy First, <br>Always.</h2>
+                <p>Your data belongs to you. Our detection tool analyzes media anonymously without tracking your browsing history or storing your personal information. We believe in transparency and verifiable security.</p>
+                <ul class="trust-list">
+                    <li class="reveal slide-up">
+                        <div class="list-icon">✓</div>
+                        <span>Zero data logging policy</span>
+                    </li>
+                    <li class="reveal slide-up delay-1">
+                        <div class="list-icon">✓</div>
+                        <span>Research-backed methodology</span>
+                    </li>
+                    <li class="reveal slide-up delay-2">
+                        <div class="list-icon">✓</div>
+                        <span>Completely free for educational use</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="download" class="section cta-section">
+        <div class="container">
+            <div class="cta-box glass-card reveal scale-up">
+                <div class="cta-glow"></div>
+                <div class="cta-content-wrapper">
+                    <h2>Ready to Browse with Confidence?</h2>
+                    <p>Join our academic initiative and upgrade your digital defense against deepfakes today.</p>
+                    <div class="cta-buttons">
+                        <a href="https://github.com/Deepanshusingh2911/Image-Integrity-System-Extension-Deepfake-Synthetic-Image-" target="_blank" class="btn btn-primary btn-large">Add to Chrome — It's Free</a>
+                        <a href="https://github.com/Deepanshusingh2911/Image-Integrity-System-Mobile-Application-Deepfake-Synthetic-Image-" target="_blank" class="btn btn-secondary btn-large">Download for Android</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/logo.png" alt="Deepfake Detection Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <span>Deepfake Detection</span>
+                </div>
+                <p>Protecting truth in the era of generative AI through academic research.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Product</h4>
+                    <a href="https://github.com/Deepanshusingh2911/Image-Integrity-System-Extension-Deepfake-Synthetic-Image-" target="_blank">Chrome Extension</a>
+                    <a href="https://github.com/Deepanshusingh2911/Image-Integrity-System-Mobile-Application-Deepfake-Synthetic-Image-" target="_blank">Android App</a>
+                    <a href="#">API Access</a>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <a href="#">Research Papers</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Documentation</a>
+                </div>
+                <div class="link-group">
+                    <h4>Project</h4>
+                    <a href="#">About the Team</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Deepfake Detection Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-container" class="chatbot-container">
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <img src="assets/logo.png" alt="Logo" class="chat-logo">
+                    <span>Deepfake Assistant</span>
+                </div>
+                <button id="close-chat" class="close-chat">&times;</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message bot-message">
+                    Hey there! 👋 I'm Vera, your Deepfake Detection assistant. Ask me anything!
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask a question..." autocomplete="off">
+                <button id="send-chat" class="send-chat">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Robot Mascot (Three.js 3D) -->
+        <div id="robot-mascot" class="robot-mascot" title="Chat with Vera!">
+            <div class="robot-bubble" id="robot-bubble">Ask me anything!</div>
+            <div id="vera-canvas-container" class="vera-canvas-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="vera3d.js"></script>
+</body>
+</html>

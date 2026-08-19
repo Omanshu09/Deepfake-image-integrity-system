@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.DeepfakeDetectionCTS"
+        parent="Theme.Material3.DayNight">
+
+        <item name="android:windowSplashScreenBackground">
+            @android:color/black
+        </item>
+
+        <item name="android:windowSplashScreenAnimatedIcon">
+            @drawable/app_logo
+        </item>
+
+        <item name="android:windowSplashScreenAnimationDuration">
+            500
+        </item>
+
+        <item name="postSplashScreenTheme">
+            @style/Theme.DeepfakeDetectionCTS
+        </item>
+
+    </style>
+
+</resources>

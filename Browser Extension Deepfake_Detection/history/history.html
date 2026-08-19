@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Detection History</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="history.css">
+</head>
+
+<body>
+
+  <div class="header-bar">
+    <h2 class="heading">Detection History</h2>
+    <img src="../setting-2-svgrepo-com.svg" class="settings-icon" id="settingsBtn" title="Detection Engine Settings" alt="Settings" />
+  </div>
+
+  <div id="historyList"></div>
+
+  <!-- DELETE BUTTON -->
+  <button id="clearBtn">
+    Delete All History
+  </button>
+
+  <!-- MODAL FOR DETAILED VIEW -->
+  <div id="detailModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- SETTINGS MODAL -->
+  <div id="settingsModal" class="modal">
+    <div class="modal-content settings-content">
+      <span class="close-btn" id="closeSettingsModal">&times;</span>
+      <h3>Detection Settings</h3>
+      <div class="setting-item">
+        <label for="engineSelect" style="display:block; margin-bottom:8px; font-weight:bold;">Choose Detection Engine:</label>
+        <select id="engineSelect" style="width:100%; padding:10px; border-radius:6px; background:#1f2937; color:white; border:1px solid #374151; font-size:16px;">
+          <option value="core">1. Use Core</option>
+          <option value="search">2. Use Search</option>
+          <option value="core2">3. Use Core 2</option>
+          <option value="testdetect">4. Test Detect</option>
+        </select>
+      </div>
+      <p style="font-size:13px; color:#9ca3af; margin-top:15px; line-height:1.4;">
+        <strong>Core:</strong> Uses EfficientNet-B0 model to detect manipulations.<br>
+        <strong>Search:</strong> Uses Google Lens search to find the image on the web and fact-check if it is synthetic or a deepfake.<br>
+        <strong>Core 2:</strong> Uses Vision transformer based multi-model ensemble to detect deepfakes and AI-generated images with high accuracy.<br>
+        <strong>Test Detect:</strong> Based for specific low quality images.
+      </p>
+    </div>
+  </div>
+
+  <script src="history.js"></script>
+
+</body>
+
+</html>
